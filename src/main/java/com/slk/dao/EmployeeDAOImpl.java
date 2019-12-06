@@ -39,7 +39,7 @@ import com.slk.util.SDBUtil;
 			
 		}
 		
-		public List<Customer> getAllCustomer(long id) throws SQLException {
+		public List<Customer> getAllCustomer(String id) throws SQLException {
 			// TODO Auto-generated method stub
 			String query1="select account_no,c.name,c.dob,c.phone_no,c.username,c.password,c.amount,b.branch_name,c.type_id,c.aadhar,c.pan,c.action from customer c,agent a,branch b where c.branch_id=b.branch_id and b.branch_id=a.branch_id and a.username="+id;
 			Statement st1=con.createStatement();

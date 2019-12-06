@@ -34,7 +34,7 @@ public class RestEmployee {
 		return employeeDaoimpl.list();
 	}
 	@GetMapping("/customer/{id}")
-	public List getCustomer(long id) throws SQLException
+	public List getCustomer(String id) throws SQLException
 	{
 		return employeeDaoimpl.getAllCustomer(id);
 	}
