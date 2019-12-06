@@ -21,7 +21,7 @@ public class SDBUtil {
 		else {
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				String url = "jdbc:mysql://localhost:3306/sapphirebank";
+				String url = "jdbc:mysql://localhost:3306/sapphirebank?useSSL=false";
 				String user = "root";
 				String password = "1234";
 				connection = DriverManager.getConnection(url, user, password);
