@@ -33,10 +33,10 @@ public class RestEmployee {
 	{
 		return employeeDaoimpl.list();
 	}
-	@GetMapping("/customer")
-	public List getCustomer() throws SQLException
+	@GetMapping("/customer/{id}")
+	public List getCustomer(long id) throws SQLException
 	{
-		return employeeDaoimpl.getAllCustomer();
+		return employeeDaoimpl.getAllCustomer(id);
 	}
 	@GetMapping("/transaction")
 	public List getTransaction() throws SQLException

@@ -13,7 +13,7 @@ public interface EmployeeDAO {
 	public List list();
 	public String delete(String id);
 	public Customer  update(Long id, Customer c);
-	public List<Customer> getAllCustomer() throws SQLException;
+	public List<Customer> getAllCustomer(long id) throws SQLException;
 	public List<Transaction> getAllTransaction() throws SQLException;
 	public Employee updateAgent(Long id, Employee e);
 }
